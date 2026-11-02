@@ -1,0 +1,33 @@
+﻿<Window x:Class="joseph.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:joseph"
+        mc:Ignorable="d"
+        Title="">
+    <Window.Resources>
+        <Style TargetType="Label">
+            <Setter Property="Control.FontFamily" Value="Papyrus" />
+            <Setter Property="Control.Margin" Value="11" />
+        </Style>
+    </Window.Resources>
+    <Grid Margin="22">
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Label Grid.Row="0" Content="Josephus lottery"/>
+        <Label Grid.Row="1" Content="Programm sircling around participants and draws out every 'm' number of them. Last one wins!"/>
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+        </Grid>
+        
+    </Grid>
+</Window>
